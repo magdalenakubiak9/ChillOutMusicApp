@@ -44,7 +44,7 @@
     <!--Texts for SearchResultsActivity -->
     <string name="search_results_text1">User search results</string>
     <string name="search_results_text2">In order to create a search interface, according to Android Developers Guidelines,
-        I will need to apply a new class: SearchView class and the following steps:
+        I will need to apply a new class - SearchView class and the following steps:
         \n 1. Create an XML file called the searchable configuration and assign attributes
     \n 2. Create a searchable activity which searches the data and presents the results
     \n 2a. Declare a searchable activity in the manifest \n 2b. Write a code to check for ACTION-SEARCH intent
