@@ -1,0 +1,91 @@
+<resources>
+
+    <!-- Title for the application -->
+    <string name="app_name">ChillOutMusicApp</string>
+
+    <!-- Title for activity with search results-->
+    <string name="title_activity_search_results">Search Results</string>
+
+    <!-- Title for the activity with the list of albums -->
+    <string name="title_activity_albums_list">Albums List</string>
+
+    <!-- Title for the activity with the album info -->
+    <string name="title_activity_album_info">Album Info</string>
+
+    <!-- Title for the activity with the list of top songs -->
+    <string name="title_activity_top_songs">Top songs</string>
+
+    <!-- Title for the activity with the now playing screen -->
+    <string name="title_activity_now_playing">Now playing</string>
+
+    <!-- Search view hint -->
+    <string name="search_view_hint">Search music</string>
+
+    <!--Albums header-->
+    <string name="albums_header">Albums</string>
+
+    <!--Songs header -->
+    <string name="songs_header">Top Songs</string>
+
+    <!-- Other headers -->
+    <string name="bestsellers">Bestselling albums ></string>
+    <string name="special_offers">Special offers ></string>
+    <string name="now_playing">Now playing</string>
+
+    <!-- "More" TextView which allows user to see more results in a separate activiy-->
+    <string name="more">More ></string>
+
+    <!--Songs titles and artists-->4
+    <string name="song1">Drift - Benji Lewis</string>
+    <string name="song2">Bellyache - Billie Eilish</string>
+    <string name="song3">Blinded - Emmit Fenn</string>
+    <string name="now_playing_song">The night we met - Lord Huron</string>
+
+    <!--Texts for SearchResultsActivity -->
+    <string name="search_results_text1">User search results</string>
+    <string name="search_results_text2">In order to create a search interface, according to Android Developers Guidelines,
+        I will need to apply a new class: SearchView class and the following steps:
+        \n 1. Create an XML file called the searchable configuration and assign attributes
+    \n 2. Create a searchable activity which searches the data and presents the results
+    \n 2a. Declare a searchable activity in the manifest \n 2b. Write a code to check for ACTION-SEARCH intent
+        and extract the string \n 2c. Connect to the data using Android SQLite API \n
+        2d. Write a code to present the search results as a ListView \n
+    3. Connect the searchable activity with the SearchView widget by placing a meta-data declaration in the manifest.
+    </string>
+
+    <!-- Texts for AlbumsListActivity-->
+    <string name="albums_list_text1">The list of all albums</string>
+    <string name="albums_list_text2">I would like to apply filters on the album list and for this I will need:
+        \npublic class SearchableAdapter extends BaseAdapter implements Filterable
+        \n\nIf a user came here by clicking \"Bestselling albums\" or \"Special offers\", the list will have
+        the albums filtered out by default accordingly to user\'s choice.
+    </string>
+
+    <!-- Texts for AlbumInfoActivity -->
+    <string name="album_info_text1">Information about chosen album</string>
+    <string name="album_info_text2"> It will contain: album cover and the list of songs and artists
+        with possibility to play each song  </string>
+
+    <!-- Texts for TopSongsActivity -->
+    <string name="top_songs_text1">The list of top 30 songs</string>
+    <string name="top_songs_text2"> It will contain the list of songs as a continuation of the list from the MainActivity:
+        album cover, song title and artist and play button  </string>
+
+    <!-- Texts for NowPlayingActivity -->
+    <string name="now_playing_text1">The now playing screen</string>
+    <string name="now_playing_text2"> The screen shows the cover of an album where the song comes from,
+        a song title, an artist, song progress bar. At the bottom there are buttons for playing previous/next
+        song and pause.\n\nI will use the ContentResolver class to retrieve tracks on the device,
+        the MediaPlayer class to play audio and the MediaController class to control playback.
+        It is also possible to use a Service instance to play audio when the user is not
+        directly interacting with the app. </string>
+
+    <!-- Texts for buttons -->
+    <string name="home_button">Home</string>
+    <string name="albums_list_button">Albums list</string>
+    <string name="top_songs_button">Top songs</string>
+
+    <!--Names of albums -->
+    <string name="album1_name">The Chillout Album. The essential late night mix</string>
+
+</resources>

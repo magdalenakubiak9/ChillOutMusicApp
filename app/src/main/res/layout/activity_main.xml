@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".MainActivity">
+
+        <SearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+
+
+            android:iconifiedByDefault="false"
+            android:queryHint="@string/search_view_hint" />
+
+        <LinearLayout
+            android:id="@+id/albums_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/HeaderTextStyle"
+                android:text="@string/albums_header" />
+
+            <TextView
+                style="@style/HeaderTextStyle"
+                android:layout_width="match_parent"
+                android:gravity="end"
+                android:text="@string/more" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/album1"
+                style="@style/AlbumListImageStyle"
+                android:src="@drawable/chilloutalbum1" />
+
+            <ImageView
+                android:id="@+id/album2"
+                style="@style/AlbumListImageStyle"
+                android:src="@drawable/chilloutalbum2" />
+
+            <ImageView
+                android:id="@+id/album3"
+                style="@style/AlbumListImageStyle"
+                android:src="@drawable/chilloutalbum3" />
+
+            <ImageView
+                android:id="@+id/album4"
+                style="@style/AlbumListImageStyle"
+                android:src="@drawable/chilloutalbum4" />
+
+            <TextView
+                android:id="@+id/more"
+                style="@style/HeaderTextStyle"
+                android:layout_width="@dimen/album_icon_size"
+                android:layout_height="@dimen/album_icon_size"
+                android:gravity="center"
+                android:text="@string/more" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@color/colorPrimaryDark" />
+
+        <LinearLayout
+            android:id="@+id/top_songs_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/HeaderTextStyle"
+                android:text="@string/songs_header" />
+
+            <TextView
+                style="@style/HeaderTextStyle"
+                android:layout_width="match_parent"
+                android:gravity="end"
+                android:text="@string/more" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/top1_song"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/SongsListAlbumImageStyle"
+                    android:layout_weight="0"
+                    android:src="@drawable/chilloutalbum3" />
+
+                <TextView
+                    style="@style/SongsListStyle"
+                    android:layout_weight="1"
+                    android:text="@string/song1" />
+
+                <ImageView
+                    style="@style/PlayImageStyle"
+                    android:layout_weight="0"
+                    android:src="@drawable/play_button" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/top2_song"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/SongsListAlbumImageStyle"
+                    android:layout_weight="0"
+                    android:src="@drawable/chilloutalbum1" />
+
+                <TextView
+                    style="@style/SongsListStyle"
+                    android:layout_weight="1"
+                    android:text="@string/song2" />
+
+                <ImageView
+                    style="@style/PlayImageStyle"
+                    android:layout_weight="0"
+                    android:src="@drawable/play_button" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/top3_song"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/SongsListAlbumImageStyle"
+                    android:layout_weight="0"
+                    android:src="@drawable/chilloutalbum1" />
+
+                <TextView
+                    style="@style/SongsListStyle"
+                    android:layout_weight="1"
+                    android:text="@string/song3" />
+
+                <ImageView
+                    style="@style/PlayImageStyle"
+                    android:layout_weight="0"
+                    android:src="@drawable/play_button" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@color/colorPrimaryDark" />
+
+
+        <TextView
+            android:id="@+id/bestselling_albums"
+            style="@style/HeaderTextStyle"
+            android:layout_width="match_parent"
+            android:text="@string/bestsellers" />
+
+        <TextView
+            android:id="@+id/special_offers"
+            style="@style/HeaderTextStyle"
+            android:layout_width="match_parent"
+            android:text="@string/special_offers" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <LinearLayout
+            android:id="@+id/now_playing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/HeaderTextStyle"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:paddingBottom="0dp"
+                android:text="@string/now_playing"
+                android:textStyle="bold|italic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/PlayImageStyle"
+                    android:layout_weight="0"
+                    android:src="@drawable/play_button" />
+
+                <TextView
+                    style="@style/SongsListStyle"
+                    android:layout_weight="1"
+                    android:text="@string/now_playing_song" />
+
+                <ImageView
+                    style="@style/SongsListAlbumImageStyle"
+                    android:layout_weight="0"
+                    android:src="@drawable/chilloutalbum4" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--size of the elements on the albums list-->
+    <dimen name="album_icon_size">100dp</dimen>
+
+    <!--size of the album and  on the songs list-->
+    <dimen name="album_icon_size_songs_list">50dp</dimen>
+
+    <!--size of play button icons on the songs list-->
+    <dimen name="play_icon_size_songs_list">30dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- size of margin and padding for buttons -->
+    <dimen name="button_margin">12dp</dimen>
+    <dimen name="button_padding">6dp</dimen>
+</resources>

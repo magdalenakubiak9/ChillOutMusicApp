@@ -1,0 +1,81 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Color for the app bar -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <!-- Color for the status bar and contextual bars-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <!-- Color for theme UI controls like checkboxes-->
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Style for headers -->
+    <style name="HeaderTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <!-- Style for images on album list -->
+    <style name="AlbumListImageStyle">
+        <item name="android:layout_width">@dimen/album_icon_size</item>
+        <item name="android:layout_height">@dimen/album_icon_size</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <!-- Style for text in songs list -->
+    <style name="SongsListStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <!-- Style for album images on songs list -->
+    <style name="SongsListAlbumImageStyle">
+        <item name="android:layout_width">@dimen/album_icon_size_songs_list</item>
+        <item name="android:layout_height">@dimen/album_icon_size_songs_list</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <!-- Style for play images on songs list -->
+    <style name="PlayImageStyle">
+        <item name="android:layout_width">@dimen/play_icon_size_songs_list</item>
+        <item name="android:layout_height">@dimen/play_icon_size_songs_list</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:layout_gravity">center_vertical|right</item>
+    </style>
+
+    <!-- Style for buttons -->
+    <style name="ButtonStyle">
+        <item name="android:layout_margin">@dimen/button_margin</item>
+        <item name="android:padding">@dimen/button_padding</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+
+</resources>
