@@ -20,6 +20,7 @@ public class SearchResultsActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent homePageIntent = new Intent(SearchResultsActivity.this, MainActivity.class);
                 startActivity(homePageIntent);
+                finish();
             }
         });
     }

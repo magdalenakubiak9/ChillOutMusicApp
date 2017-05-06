@@ -31,6 +31,7 @@ public class TopSongsActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent homePageIntent = new Intent(TopSongsActivity.this, MainActivity.class);
                 startActivity(homePageIntent);
+                finish();
             }
         });
     }

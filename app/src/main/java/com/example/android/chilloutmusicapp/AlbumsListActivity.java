@@ -20,6 +20,7 @@ public class AlbumsListActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent albumInfoIntent = new Intent(AlbumsListActivity.this, AlbumInfoActivity.class);
                 startActivity(albumInfoIntent);
+                finish();
             }
         });
 
@@ -31,6 +32,7 @@ public class AlbumsListActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent homePageIntent = new Intent(AlbumsListActivity.this, MainActivity.class);
                 startActivity(homePageIntent);
+                finish();
             }
         });
     }

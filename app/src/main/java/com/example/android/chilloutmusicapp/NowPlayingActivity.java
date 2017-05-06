@@ -20,6 +20,7 @@ public class NowPlayingActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent homePageIntent = new Intent(NowPlayingActivity.this, AlbumsListActivity.class);
                 startActivity(homePageIntent);
+                finish();
             }
         });
 
@@ -31,6 +32,7 @@ public class NowPlayingActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent homePageIntent = new Intent(NowPlayingActivity.this, TopSongsActivity.class);
                 startActivity(homePageIntent);
+                finish();
             }
         });
     }
